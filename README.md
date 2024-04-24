@@ -1,1 +1,1 @@
-# template_nanoframework
+# CCSWE.nanoFramework.Logging
