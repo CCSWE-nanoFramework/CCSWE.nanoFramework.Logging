@@ -12,16 +12,22 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>template_nanoframework</RootNamespace>
-    <AssemblyName>template_nanoframework</AssemblyName>
+    <RootNamespace>CCSWE.nanoFramework.Logging</RootNamespace>
+    <AssemblyName>CCSWE.nanoFramework.Logging</AssemblyName>
     <Nullable>Enable</Nullable>
-    <DocumentationFile>bin\$(Configuration)\template_nanoframework.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\CCSWE.nanoFramework.Logging.xml</DocumentationFile>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
+    <Compile Include="ConfigureLoggerOptions.cs" />
+    <Compile Include="DebugLogger.cs" />
+    <Compile Include="DebugLoggerFactory.cs" />
+    <Compile Include="LoggerFormatter.cs" />
+    <Compile Include="LoggerOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CCSWE.nanoFramework.Core">
@@ -29,6 +35,12 @@
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>..\packages\nanoFramework.CoreLibrary.1.15.5\lib\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="nanoFramework.DependencyInjection">
+      <HintPath>..\packages\nanoFramework.DependencyInjection.1.1.3\lib\nanoFramework.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="nanoFramework.Logging">
+      <HintPath>..\packages\nanoFramework.Logging.1.1.94\lib\nanoFramework.Logging.dll</HintPath>
     </Reference>
     <Reference Include="nanoFramework.System.Text">
       <HintPath>..\packages\nanoFramework.System.Text.1.2.54\lib\nanoFramework.System.Text.dll</HintPath>

@@ -11,10 +11,10 @@ jobs:
     name: nanoFramework
     uses: nanoframework/nf-tools/.github/workflows/check-package-lock.yml@main
     with:
-      solution: 'template_nanoframework.sln'
+      solution: 'CCSWE.nanoFramework.Logging.sln'
   check_nuget_latest:
     name: nanoFramework
     uses: nanoframework/nf-tools/.github/workflows/check-packages-updated.yml@main
     secrets: inherit
     with:
-      solution: 'template_nanoframework.sln'
+      solution: 'CCSWE.nanoFramework.Logging.sln'

@@ -19,7 +19,7 @@ jobs:
     env:
       BUILD_CONFIGURATION: 'Release'
       GITHUB_TOKEN: ${{ github.token }}
-      SOLUTION: 'template_nanoframework.sln'
+      SOLUTION: 'CCSWE.nanoFramework.Logging.sln'
 
     steps:
       - name: Checkout
