@@ -8,12 +8,13 @@
     <authors>Cory Charlton</authors>
     <owners>Cory Charlton,CCSWE</owners>
     <license type="file">LICENSE.md</license>
-    <projectUrl>https://github.com/CoryCharlton/CCSWE.nanoFramework.Logging</projectUrl>
+    <projectUrl>https://github.com/CCSWE-nanoFramework/CCSWE.nanoFramework.Logging</projectUrl>
+    <icon>images\ccswe-logo.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <readme>README.md</readme>
     <developmentDependency>false</developmentDependency>
     <description>Logging infrastructure default implementation for Microsoft.Extensions.Logging.</description>
-    <repository type="git" url="https://github.com/CoryCharlton/CCSWE.nanoFramework.Logging" commit="$commit$" />
+    <repository type="git" url="https://github.com/CCSWE-nanoFramework/CCSWE.nanoFramework.Logging" commit="$commit$" />
     <copyright>Copyright (c) Cory Charlton</copyright>
     <tags>nanoFramework C# csharp netmf netnf ccswe logging</tags>
     <dependencies>
@@ -25,6 +26,7 @@
   </metadata>
   <files>
     <file src="CCSWE.nanoFramework.Logging\bin\Release\CCSWE.nanoFramework.Logging.*" target="lib" />
+    <file src="ccswe-logo.png" target="images" />
     <file src="LICENSE.md" target="" />
     <file src="README.md" target="" />
   </files>
