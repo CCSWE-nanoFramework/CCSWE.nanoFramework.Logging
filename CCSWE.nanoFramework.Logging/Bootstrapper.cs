@@ -16,11 +16,12 @@ namespace CCSWE.nanoFramework.Logging
             var options = new LoggerOptions();
             if (configureOptions is null)
             {
-#if DEBUG
+                // TODO: Come back to this...
+//#if DEBUG
                 options.MinLogLevel = LogLevel.Debug;
-#else
-                options.MinLogLevel = LogLevel.Warning;
-#endif
+//#else
+//                options.MinLogLevel = LogLevel.Warning;
+//#endif
             }
 
             configureOptions?.Invoke(options);
