@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CCSWE.nanoFramework.Logging
 {
+    // TODO: Replace this with a per-sink formatter
     internal static class LoggerFormatter
     {
         public static string Formatter(string loggerName, LogLevel logLevel, EventId eventId, string state, Exception? exception)
