@@ -21,7 +21,7 @@
       <!--<dependency id="CCSWE.nanoFramework.Core" version="0.2.31" />-->
       <dependency id="nanoFramework.CoreLibrary" version="1.15.5" />
       <dependency id="nanoFramework.DependencyInjection" version="1.1.11" />
-      <dependency id="nanoFramework.Logging" version="1.1.113" />
+      <dependency id="nanoFramework.Logging" version="1.1.120" />
     </dependencies>
   </metadata>
   <files>
