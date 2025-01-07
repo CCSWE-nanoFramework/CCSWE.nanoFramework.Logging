@@ -16,18 +16,13 @@ namespace CCSWE.nanoFramework.Logging
             var options = new LoggerOptions();
             if (configureOptions is null)
             {
-                // TODO: Come back to this...
-//#if DEBUG
                 options.MinLogLevel = LogLevel.Debug;
-//#else
-//                options.MinLogLevel = LogLevel.Warning;
-//#endif
             }
 
             configureOptions?.Invoke(options);
 
-            services.AddSingleton(typeof(ILogger), typeof(DebugLogger));
-            services.AddSingleton(typeof(LoggerOptions), options);
+            services.TryAdd(new ServiceDescriptor(typeof(ILogger), typeof(DebugLogger), ServiceLifetime.Singleton));
+            services.TryAdd(new ServiceDescriptor(typeof(LoggerOptions), options));
 
             LoggerFormatter.Initialize();
 
